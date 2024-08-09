@@ -22,7 +22,7 @@ const AboutUs = () => {
             </p>
             <p className="text-muted-foreground">
               Behind the scenes, our team of dedicated writers and researchers work tirelessly to bring you the latest
-              news, trends, and expert advice on science. We're driven by a love for the subject matter and a
+              news, trends, and expert advice on science. We are driven by a love for the subject matter and a
               desire to empower our readers to wonder.
             </p>
           </div>
@@ -40,7 +40,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section>
-        <h2 className="mb-4 text-2xl font-bold md:text-3xl lg:text-4xl">What You'll Find on Our Blog</h2>
+        <h2 className="mb-4 text-2xl font-bold md:text-3xl lg:text-4xl">What You will Find on Our Blog</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
           <div>
             <h3 className="mb-2 text-xl font-bold">Latest News</h3>

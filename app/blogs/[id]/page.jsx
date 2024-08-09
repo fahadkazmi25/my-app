@@ -2,6 +2,7 @@ import React from 'react'
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../firestore/firebaseConfig";
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 function CalendarIcon(props) {
@@ -51,7 +52,7 @@ export default async function BlogById({ params }) {
               ← Go Back
             </div>
           </Link>
-            <img
+            <Image
               src={blog.imageUrl}
               alt="Featured Image"
               width="1200"

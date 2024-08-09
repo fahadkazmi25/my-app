@@ -22,22 +22,7 @@ export default function Home() {
                 <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-[#f0fdf4] to-[#ecfdf5]" />
                 <div className="absolute top-0 left-0 h-full w-full">
                   <div className="absolute top-0 left-0 h-full w-full">
-                    <img
-                      src="/placeholder.svg"
-                      width={400}
-                      height={400}
-                      alt="Flower"
-                      className="absolute top-[-100px] left-[-100px] h-[500px] w-[500px] opacity-50"
-                      style={{ aspectRatio: "400/400", objectFit: "cover" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      width={300}
-                      height={300}
-                      alt="Hand"
-                      className="absolute bottom-[-100px] right-[-100px] h-[400px] w-[400px] opacity-50"
-                      style={{ aspectRatio: "300/300", objectFit: "cover" }}
-                    />
+                   
                   </div>
                 </div>
               </div>

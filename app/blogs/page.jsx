@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firestore/firebaseConfig"; // Adjust the path if needed
+import Image from 'next/image';
 
 
 async function getData() {
@@ -41,7 +42,7 @@ export default async function Blogs() {
       className="group relative w-full max-w-sm overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:scale-105"
     >
       <Link href={`/blogs/${blog.id}`} prefetch={false}>
-        <img
+        <Image
           src={blog.imageUrl}
           alt={blog.title}
           width={400}

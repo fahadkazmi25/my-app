@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Loader from '@/components/loader';
+import Image from 'next/image';
 
 export default function TopReaders() {
     const [users, setUsers] = useState([]); 
@@ -35,12 +36,12 @@ export default function TopReaders() {
         </div>
 
         {loading?(<Loader/>):(<section className="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3 lg:p-6">
-        {users.map((user) => (
-        <div className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
+        {users.map((user,index) => (
+        <div key={index} className="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow-lg group hover:shadow-xl hover:-translate-y-2">
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View Reader</span>
           </Link>
-          <img
+          <Image
             src={user.image}
             alt="Reader 1"
             width="300"
