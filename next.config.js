@@ -8,6 +8,10 @@ const nextConfig = {
           port: '',
           pathname: '/v0/b/next-app-55fdd.appspot.com/o/**',
         },
+        {
+            protocol: 'https',
+            hostname: '**', // This allows images from any HTTPS domain
+          },
       ],
     },
   };
