@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'firebasestorage.googleapis.com',
+          port: '',
+          pathname: '/v0/b/next-app-55fdd.appspot.com/o/**',
+        },
+      ],
+    },
+  };
+  
+  module.exports = nextConfig;
+  
