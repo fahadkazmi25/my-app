@@ -17,7 +17,7 @@ async function getData() {
 }
 export default async function Blogs() {
   const blogs= await getData()
-  // console.log(blogs)
+  console.log(blogs)
   return (
     <div className="py-12 px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
  <div className="flex flex-col gap-8 mb-8">
